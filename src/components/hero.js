@@ -2,9 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Button from "../components/button"
+import goals from "../images/Goals1.png"
+import goals2 from "../images/Goals2.png"
+import logo from "../images/logo.png"
 import headerImage from "../images/header.png"
-import MockupContent from "./image"
-import mockupFrame from "../images/mockup-frame.png"
 
 const Header = ({ siteTitle }) => (
   <div
@@ -26,28 +27,42 @@ const Header = ({ siteTitle }) => (
         opacity: 0.5,
       }}
     />
-    <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
-    <p style={{ textAlign: "center", maxWidth: 440 }}>
-      This landing page looks great on all devices and is minimal in design. Add
-      what you want and deploy.
-    </p>
-    <Button>Get Early Access</Button>
-    <div style={{ margin: 60, width: `250px`, position: "relative" }}>
-      <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
-        <MockupContent />
-      </div>
-      <div
+    <h1 style={{ textAlign: "center" }}>
+      <img
+        src={logo}
+        alt="Daily Goal Reminders: Logo"
+        width="32px"
         style={{
-          position: "absolute",
-          width: "250px",
-          top: 0,
+          transform: "translateY(27.3px) translateX(-9px)",
         }}
-      >
-        <img
-          src={mockupFrame}
-          alt="outlines of shapes and confetti in the background "
-        />
-      </div>
+      />
+      Daily Goal Reminders
+    </h1>
+
+    <p style={{ textAlign: "center", maxWidth: 440 }}>
+      Daily Goal Reminders is the macOS app for staying organized in a busy
+      remote world.
+    </p>
+    <Button>Get The App</Button>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <img
+        src={goals}
+        alt="outlines of shapes and confetti in the background"
+        style={{
+          borderRadius: "5px",
+          marginTop: "3rem",
+        }}
+      />
+      <img
+        src={goals2}
+        alt="outlines of shapes and confetti in the background"
+        style={{
+          borderRadius: "5px",
+          marginTop: "3rem",
+        }}
+      />
     </div>
   </div>
 )

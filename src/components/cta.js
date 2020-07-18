@@ -6,10 +6,10 @@ import SectionHeader from "./section-header"
 const CallToAction = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
     <SectionHeader
-      title="Stay Updated"
-      description="Give a final call to action because that's what the cool kids are doing."
+      title="Create Your Schedule"
+      description="Download the app, and begin your journey today."
     />
-    <Button>Get Early Access</Button>
+    <Button>Get The App</Button>
   </div>
 )
 

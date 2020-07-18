@@ -7,8 +7,8 @@ import { COLORS } from "../styles/constants"
 const Content = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
     <SectionHeader
-      title="Minimal Features"
-      description="Don't spend time ripping out unneeded plugins and bloat."
+      title="Never Fall Behind"
+      description="Set a reminder, and get a notification at that time every day."
     />
     <content
       style={{
@@ -19,10 +19,10 @@ const Content = () => (
       }}
     >
       <div>
-        <h3>What you need to Start</h3>
+        <h3>Consistency is Key</h3>
         <p style={{ color: COLORS.gray }}>
-          Includes plugins for analytics, building sitemaps, and optimizing
-          images
+          Performing your scheduled tasks every day will get you to where you
+          want to be.
         </p>
       </div>
       <div>

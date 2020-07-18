@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import { Link } from "gatsby"
+
 import { COLORS } from "../styles/constants"
 
 const Footer = ({ siteTitle }) => (
@@ -20,12 +22,33 @@ const Footer = ({ siteTitle }) => (
         fontSize: ".85rem",
       }}
     >
-      <div style={{ color: COLORS.blue, fontWeight: 700 }}>
+      <div
+        style={{
+          color: COLORS.blue,
+          fontWeight: 700,
+          display: "flex",
+        }}
+      >
+        <Link
+          style={{ textDecoration: "none" }}
+          to="/contact"
+          style={{ margin: "0 2rem 0 0" }}
+        >
+          Contact
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          to="/privacy-policy"
+          style={{ margin: "0 2rem 0 0" }}
+        >
+          Privacy Policy
+        </Link>
         <a
           style={{ textDecoration: "none" }}
-          href="https://github.com/gillkyle/gatsby-starter-landing-page"
+          href="https://github.com/mjcapecci/digital-nomad-assistant"
+          style={{ margin: "0 2rem 0 0" }}
         >
-          Contact Us
+          Source Code
         </a>
       </div>
       <div style={{ color: COLORS.gray }}>

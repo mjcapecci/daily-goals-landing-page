@@ -1,21 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter Landing Page`,
-    description: `A barebone landing page starter with some minimal styles.`,
-    author: `@gillkyle`,
-    siteUrl: `https://gatsby-starter-landing-page.netlify.com`,
+    title: `Daily Goal Reminders`,
+    description: `The macOS app for staying on top of your schedule every day.`,
+    author: `@mjcapecci`,
+    siteUrl: `https://dailygoalreminders.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-172973540-1",
+        head: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
