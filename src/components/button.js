@@ -15,7 +15,9 @@ const Button = ({ children }) => (
       cursor: "pointer",
     }}
   >
-    {children}
+    <a href="https://apps.apple.com/us/app/daily-goal-reminders/id1524106873?mt=12">
+      {children}
+    </a>
   </button>
 )
 
