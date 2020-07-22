@@ -2,9 +2,11 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -444,4 +446,8 @@ li > p {
   html {
     font-size: 100%;
   }
+}
+
+footer a {
+  text-decoration: none;
 }

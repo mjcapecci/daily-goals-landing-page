@@ -1,15 +1,21 @@
 import React from "react"
-import headerImage from "../images/header.png"
-import Hero from "../components/hero"
-
 import Layout from "../components/layout"
+import { Link } from "gatsby"
+
+import "../styles/aux.css"
 
 const Contact = () => {
   return (
     <Layout>
-      <div style={{ minHeight: "85.5vh" }}>
+      <div className="aux aux-contact" style={{ minHeight: "79vh" }}>
         <h2>Questions or Concerns?</h2>
-        <p>Email me at mjcapecci@gmail.com</p>
+        <p>
+          Email me at{" "}
+          <a href="mailto:michael@michaelcapecci.com">
+            michael@michaelcapecci.com
+          </a>
+        </p>
+        <Link to="/">⬅️ Return to Home</Link>
       </div>
     </Layout>
   )

@@ -2,11 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { Link } from "gatsby"
+
 const PrivacyPolicy = () => {
   return (
     <Layout>
       <SEO />
-      <div className="policy">
+      <div className="policy aux">
+        <Link to="/" style={{ marginBottom: "2rem" }}>
+          ⬅️ Return to Home
+        </Link>
         <h2>PRIVACY NOTICE</h2>
         <h4>Last updated July 17, 2020</h4>
         <br></br>
@@ -263,12 +268,11 @@ const PrivacyPolicy = () => {
         <p>
           Michael Capecci
           <br></br>
-          529 Siebert Dr.
-          <br></br>
-          Schererville, IN 46375
+          Chicago, IL
           <br></br>
           United States
         </p>
+        <Link to="/">⬅️ Return to Home</Link>
       </div>
     </Layout>
   )
