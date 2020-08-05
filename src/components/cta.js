@@ -9,7 +9,7 @@ const CallToAction = () => (
       title="Create Your Schedule"
       description="Download the app, and begin your journey today."
     />
-    <Button>Get The App</Button>
+    {/* <Button>Get The App</Button> */}
   </div>
 )
 
