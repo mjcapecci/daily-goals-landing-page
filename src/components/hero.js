@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => (
       Daily Goal Reminders is the macOS app for staying organized in a busy
       remote world.
     </p>
-    <p>Temporariy Offline for Updates! Be back soon!</p>
+    <p>Temporarily Offline for Updates! Be back soon!</p>
     {/* <Button>Get The App</Button> */}
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
